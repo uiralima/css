@@ -5,4 +5,4 @@ Basta abrir o index.html na raiz para navegar para os projetos.
 
 ## projetos inclusos
 - Clone da página inicial do Instaram
-- -Galeria de fotos
+- Galeria de fotos
