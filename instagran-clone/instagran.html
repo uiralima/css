@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagran boxex</title>
+    <link rel="stylesheet" href="instagran.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="phones">
+            <div class="images">
+                <img id="0a2d3016f375" src="./imgs/0a2d3016f375.jpg">
+                <img id="6f03eb85463c" src="./imgs/6f03eb85463c.jpg">
+                <img id="842fe5699220" src="./imgs/842fe5699220.jpg">
+                <img id="d6bf0c928b5a" src="./imgs/d6bf0c928b5a.jpg">
+                <img id="f0c687aa6ec2" src="./imgs/f0c687aa6ec2.jpg">
+            </div>
+        </div>
+        <div class="auth">
+            <div class="title-login">
+                <h1 class="title">Instagran</h1>
+                <form>
+                    <div class="form">
+
+                        <div class="form-itens">
+                            <div class="id-field">
+                                <div class="id-field-content">
+                                    <label>
+                                        <span class="field-info">Telefone, nome de usuário ou email</span>
+                                        <input aria-label="Telefone, nome de usuário ou email" aria-required="true"
+                                            autocapitalize="off" autocorrect="off" maxlength="75" name="username"
+                                            type="text" value="">
+                                    </label>
+                                    <div class="pdg"></div>
+                                </div>
+                            </div>
+                            <div class="id-field">
+                                <div class="id-field-content">
+                                    <label>
+                                        <span class="field-info">Senha</span>
+                                        <input aria-label="Senha" aria-required="true" autocapitalize="off"
+                                            autocorrect="off" maxlength="75" name="password" type="password" value="">
+                                    </label>
+                                    <div class="pdg"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn-entrar" disabled="" type="submit">
+                                <div>Entrar</div>
+                            </button>
+                        </div>
+                        <div class="or">
+                            <div class="line"></div>
+                            <div class="word">ou</div>
+                            <div class="line"></div>
+                        </div>
+                        <div>
+                            <button class="facebook" type="button">
+                                <span class="fb-icon"></span><span class="fb-text">Entrar com o Facebook</span>
+                            </button>
+                        </div>
+                        <a class="forget" href="#" tabindex="0">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="register">
+                <div>
+                    <p>Não tem uma conta? <a href="#" tabindex="0" class="register-link"><span>Cadastre-se</span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="obtain">
+                <div>
+                    <p>Obtenha o aplicativo.</p>
+                </div>
+                <div class="obt-images">
+                    <a href="#"><img class="app-store" alt="Disponível na App Store" src="./imgs/68006a2bb372.png"></a>
+                    <a href="#"><img class="app-store" alt="Disponível no Google Play"
+                            src="./imgs/2f2a0c05b2f3.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+
+        (() => {
+
+            const images = ['0a2d3016f375', '6f03eb85463c',
+                '842fe5699220', 'd6bf0c928b5a', 'f0c687aa6ec2'];
+
+            function changeImage(index) {
+                let lastIndex = index - 1
+
+                if (index >= images.length) {
+                    index = 0;
+                }
+                if (index === 0) {
+                    lastIndex = images.length - 1
+                }
+                var currentElement = document.getElementById(images[lastIndex])
+                var nextElement = document.getElementById(images[index])
+                Array.from(document.getElementsByClassName('hideC')).forEach(el => el.classList.remove('hideC'))
+                currentElement.classList.add('hideC')
+                currentElement.classList.remove('opacity')
+                nextElement.classList.add('opacity')
+                setTimeout(() => changeImage(++index), 5000)
+            }
+
+            changeImage(0);
+        })();
+
+    </script>
+</body>
+
+</html>

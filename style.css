@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: blueviolet;
+    height: 300px;
+    border: 5px solid rgb(22, 22, 22);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    background-color: brown;
+    height: 80%;
+    width: 10%;
+    border: 5px solid black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}

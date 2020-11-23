@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(250,250,250);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.phones {display: none;}
+
+.auth {
+    vertical-align: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: stretch;
+    max-width: 350px;
+    
+}
+
+.title-login h1 {
+    margin: 22px 86.5px 12px 86.5px;
+}
+
+.title-login {
+    background-color: #FFF;
+    border: 1px solid rgb(219,219,219);
+    border-radius: 3px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+    margin-top: 24px;
+}
+
+form {
+    display: flex;
+}
+
+.field-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-field-content {
+    border: 1px solid rgb(219, 219, 219);
+    position: relative;
+    height: 38px;
+    background-color: rgb(250,250,250);
+    border-radius: 3px;
+}
+
+.field-info {
+    position: absolute;
+    font-size: 12px;
+    left: 8px;
+    top: 10px;
+    color: rgb(142, 142, 142);
+}
+
+.id-field {
+    margin: 0px 40px 7px 40px;
+}
+
+input {
+    background: #fafafa;
+    background: rgba(var(--b3f,250,250,250),1);
+    border: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+}
+
+.pdg {
+    padding-right: 8px;
+}
+
+.title {
+    background-image: url("./imgs/32f0a4f27407.png");
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    color: transparent;
+    margin: 22px 86.5px 12px 86.5px;
+}
+
+.btn-entrar {
+    background-color: rgba(0, 149, 246, 0.3);
+    color: white;
+    background-clip: border-box;
+    width: 268px;
+    padding: 6px 9px;
+    border: 1px solid transparent;
+    margin: 5px 40px 7px 40px;
+    border-radius: 3px;
+}
+
+.line {
+    border: 1px solid rgb(219, 219, 219);
+    height: 0px;
+    display: flex;
+    width: 107px;
+    margin-top: 12px;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    vertical-align: baseline;
+    align-items: stretch;
+    margin: 10px 40px 18px 40px;
+}
+
+.word {
+    margin: 0px 15px;
+    color: rgb(142,142,142);
+    font-size: 16px;
+}
+
+.facebook {
+    margin: 8px 40px;
+    width: 268px;
+    background-color: #FFF;
+    border: 0px;
+    color: rgb(56, 81, 133);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fb-icon {
+    background-image: url('./imgs/32f0a4f27407.png');
+    background-position-x: -414px;
+    background-position-y: -259px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: baseline;
+}
+
+.fb-text {
+    vertical-align: baseline;
+}
+
+.forget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 55, 107);
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.register {
+    background-color: #FFF;
+    border: 1px solid rgb(219,219,219);
+    border-radius: 3px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register p {
+    text-align: center;
+    font-size: 13px;
+    margin: 15px;
+}
+
+.register-link {
+    color:rgb(0, 149, 246);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.obtain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.obtain p {
+    text-align: center;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.obt-images {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.app-store {
+    width: 136px;
+    height: 40px;
+}
+
+@media (min-width: 450px) {
+    .container {
+        margin-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .auth {
+        padding: 10px 0px 20px 0px;
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 876px) {
+    .phones {
+        height: 618px ;
+        width: 454px ;
+        position: relative;
+        align-items: stretch;
+        display: block;
+        background-image: url("./imgs/43cc71bb1b43.png");
+        background-repeat: no-repeat;
+        background-size: 454px  618px;
+        margin-left: -35px;
+        margin-right: -15px;
+    }
+
+    @keyframes hide {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+
+    @keyframes show {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .images img {
+        position: absolute;
+        top: 96.6px;
+        left: 148.5px;
+        width: 245px;
+        height: 433px;
+        display: none;
+    }
+
+    .images .opacity {
+        animation-name: show;
+        animation-duration: 4s;
+        display: block;
+        z-index: 1;
+    }
+
+    .images .hideC {
+        animation-name: hide;
+        animation-duration: 4s;
+        display: block;
+    }
+}
