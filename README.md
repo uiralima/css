@@ -3,6 +3,6 @@ Repositório feito para guardar meus trabalhos e estudis feitos na área de CSS 
 
 Basta abrir o index.html na raiz para navegar para os projetos.
 
-## projetos inclusos
+## Projetos inclusos
 - Clone da página inicial do Instaram
 - Galeria de fotos
